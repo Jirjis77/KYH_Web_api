@@ -24,7 +24,7 @@ on:
    - name: create zip package
    run: cd site; zip ../site.zip *;
 
-   - name: dDeploy to aws EB
+   - name: Deploy to aws EB
      uses: einaregilsson/beanstalk-deploy@v21
      with: 
       aws_acces_key: ${{secrets.AWS_ACCESS_KEY_ID}}
