@@ -2,7 +2,7 @@ name: Build and push to aws
 
 on: 
   push:
-  branches:
+  Branches:
    - main
 
    jobs:
