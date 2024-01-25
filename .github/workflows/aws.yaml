@@ -31,6 +31,7 @@ jobs:
         aws_secret_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
         application_name: 'calculator API'
         environment_name: 'Calculatorapi-env'
-        version_label: ${{github.run_id}}
+        version_label: ${{ github.run_id }}
+        use_existing_version_if_available: true
         region: 'eu-north-1'
         deployment_package: 'site.zip'
